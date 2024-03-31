@@ -19,10 +19,22 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // InterfaceとRepositoryの紐付け
+        // InterfaceとRepositoryの紐付け(Eloquent)
         app()->bind(
             \App\Infrastructures\Interfaces\Item\IGetItemsRepository::class,
             \App\Infrastructures\Repositories\Eloquent\Item\GetItemsRepository::class
         );
+
+        // InterfaceとRepositoryの紐付け(MySql)
+        /*app()->bind(
+            \App\Infrastructures\Interfaces\Item\IGetItemsRepository::class,
+            \App\Infrastructures\Repositories\MySql\Item\GetItemsRepository::class
+        );*/
+
+        // InterfaceとRepositoryの紐付け(Api)
+        /*app()->bind(
+            \App\Infrastructures\Interfaces\Item\IGetItemsRepository::class,
+            \App\Infrastructures\Repositories\Api\Item\GetItemsRepository::class
+        );*/
     }
 }

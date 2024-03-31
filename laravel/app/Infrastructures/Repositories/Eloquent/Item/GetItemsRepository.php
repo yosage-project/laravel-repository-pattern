@@ -10,6 +10,7 @@ class GetItemsRepository implements IGetItemsRepository
 {
     public function getItems(): array
     {
+        echo 'Eloquentを利用したデータ取得';
         return Item::all()->toArray();
     }
 }

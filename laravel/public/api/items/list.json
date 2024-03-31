@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "item1",
+        "description": "description1",
+        "price": 100,
+        "sold_out": false
+    },
+    {
+        "id": "2",
+        "name": "item2",
+        "description": "description2",
+        "price": 200,
+        "sold_out": false
+    },
+    {
+        "id": "3",
+        "name": "item3",
+        "description": "description3",
+        "price": 300,
+        "sold_out": true
+    }
+]
